@@ -6,12 +6,12 @@ const UserProfile = () => {
   const navigate = useNavigate();
 
   const [user, setUser] = useState({
-    username: 'storyfan99',
+    username: 'Example',
     email: 'user@example.com',
-    bio: 'I love fantasy stories and dark academia.',
+    bio: "write a bio here....",
     genres: ['Fantasy', 'Dark Academia', 'Adventure'],
     joinedDate: new Date('2024-12-20T10:00:00Z'),
-    avatar: 'https://i.pravatar.cc/150?u=storyfan99', // example avatar
+    avatar: 'https://i.pravatar.cc/150?u=storyfan99',
   });
 
   const [isEditing, setIsEditing] = useState(false);
@@ -47,7 +47,7 @@ const UserProfile = () => {
           {/* Avatar */}
           <img
             src={user.avatar}
-            alt="User avatar"
+            alt=""
             className="w-28 h-28 rounded-full shadow-md border-4 border-white mb-4"
           />
 
@@ -66,6 +66,7 @@ const UserProfile = () => {
                 value={formData.username}
                 onChange={handleInputChange}
                 className="w-full border px-4 py-2 rounded-md"
+                placeholder="Your Username..."
               />
               <input
                 type="email"
@@ -73,6 +74,7 @@ const UserProfile = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 className="w-full border px-4 py-2 rounded-md"
+                placeholder="E-mail"
               />
               <textarea
                 name="bio"
@@ -80,6 +82,7 @@ const UserProfile = () => {
                 onChange={handleInputChange}
                 className="w-full border px-4 py-2 rounded-md"
                 rows={3}
+                placeholder="About you ....."
               />
             </>
           ) : (

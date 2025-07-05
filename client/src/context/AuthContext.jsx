@@ -30,7 +30,8 @@ export function AuthProvider({ children }) {
     localStorage.setItem('token', data.token);
     setUser({ email });
   };
-
+   
+  
   const logout = () => {
     localStorage.removeItem('token');
     setUser(null);

@@ -9,7 +9,7 @@ const About = () => {
           <img
             src="/IMG-20250627-WA0107.jpg"
             alt="Author"
-            className="w-full h-full object-cover rounded-md p-6"
+            className="w-full h-full object-cover rounded-lg p-6"
           />
         </div>
 
